@@ -4,7 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Fractiled</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW&display=swap" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW&family=Lora&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
@@ -14,50 +17,46 @@
       font-family: 'Lora', serif;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      height: 100vh;
+      justify-content: center;
+      min-height: 100vh;
       text-align: center;
+      padding: 2rem;
+      box-sizing: border-box;
     }
 
     h1 {
       font-family: 'Playwrite AU NSW', sans-serif;
-      font-size: 3em;
-      margin-bottom: 1em;
+      font-size: 8vw; /* Responsive font size */
+      margin-bottom: 1rem;
     }
 
     p {
-      font-size: 1.2em;
-      max-width: 700px;
-      line-height: 1.6;
+      font-size: 4.5vw; /* Adjusts based on screen size */
+      max-width: 800px;
+      line-height: 1.5;
     }
 
-    a {
-      margin-top: 2em;
-      display: inline-block;
-      color: white;
-      text-decoration: underline;
-      font-size: 1em;
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 4rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+      }
     }
   </style>
 </head>
 <body>
   <h1>Fractiled</h1>
   <p>
-    Fractiled is a fun and simple logic puzzle where you tap the triangles to change the color of their neighbors. Can you match them all?<br/><br/>
-
-    🔺 Tap triangles to change the color of their neighbors<br/>
-    🎯 Your goal? Make all the triangles the same color<br/>
-    🧠 Think ahead — tapping a triangle doesn’t change its color, but its fractal neighbors<br/>
-    🚀 Each level the game gets trickier<br/>
-    🥊 Beat yourself from yesterday and push your streak higher<br/>
-    💡 Simple rules, deep logic — perfect for fans of brain teasers and minimalist puzzles<br/><br/>
-
-    Challenge yourself with clever mechanics, clean visuals, and a relaxing vibe.<br/>
-    Meditate through gameplay, sharpen your mind, and enjoy a fresh puzzle every time you play.
+    Fractiled is a fun and simple logic puzzle where you tap the triangles to change the color of their neighbors. Can you match them all?
   </p>
-
-  <a href="privacy.html">Privacy Policy</a>
+<a href="privacy.html">Privacy Policy</a>
 </body>
 </html>
+
+
+  
 
