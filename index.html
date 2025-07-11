@@ -64,16 +64,17 @@ a:active {
   color: white; /* keep black while clicking */
 }
 
-  .video-container {
-    width: 40%;
+ .video-container {
+    width: 40vw;              /* 40% of the viewport width */
     margin: 20px auto;
-    border: 2px solid #333; /* dark gray border */
-    border-radius: 12px;     /* rounded corners (optional) */
-    overflow: hidden;        /* hides overflow for clean edges */
+    border: 2px solid black;
+    border-radius: 12px;
+    overflow: hidden;
   }
 
   .video-container video {
     display: block;
+    width: 100%;              /* Fill the container */
     height: auto;
   }
 
